@@ -13,7 +13,8 @@ public class AccessibilityTest extends BaseClass {
     @Test
     public void testAccessibility() {
         driver.get("https://magento.softwaretestingboard.com/");
-        File axeCoreFile = new File("C:\\production\\ADATesting\\node_modules\\axe-core\\axe.min.js");
+        // path of the axe.min.js file 
+        File axeCoreFile = new File("axe.min.js");
         URL scriptUrl = null;
         try {
             scriptUrl = axeCoreFile.toURI().toURL();
